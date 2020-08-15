@@ -1,0 +1,13 @@
+jupyterlab
+scikit-learn
+pandas
+pandas-profiling
+matplotlib
+tables
+pyarrow
+plotly
+seaborn
+yellowbrick
+texthero
+spacy
+cloud-products
