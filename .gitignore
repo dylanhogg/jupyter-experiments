@@ -4,6 +4,7 @@ data-cache/
 .idea/
 .vscode/
 venv*/
+.cloud-products-cache/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
