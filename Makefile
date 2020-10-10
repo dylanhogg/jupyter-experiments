@@ -36,7 +36,7 @@ jupyter_blackstone:
 
 ## Create minimal venv for jupyter
 venv_minimal_reset:
-    rm -rf venv_minimal
+	rm -rf venv_minimal
 	python3 -m venv venv_minimal ; source venv_minimal/bin/activate ; pip install --upgrade pip ; pip install -r requirements_minimal.txt
 	source venv_minimal/bin/activate; pip freeze > requirements_minimal_freeze.txt
 
