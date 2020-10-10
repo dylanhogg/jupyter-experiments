@@ -32,3 +32,8 @@ make jupyter
 [cloud_products_analysis/SpacyTest.colab.ipynb](https://github.com/dylanhogg/jupyter-experiments/blob/master/notebooks/cloud_products_analysis/spacy/SpacyTest.colab.ipynb)  
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dylanhogg/jupyter-experiments/master?urlpath=notebooks/cloud_products_analysis/spacy/SpacyTest.colab.ipynb)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dylanhogg/jupyter-experiments/blob/master/notebooks/cloud_products_analysis/spacy/SpacyTest.colab.ipynb)  
+
+
+[legal_eagle/blackstone/BlackstoneTest.colab.ipynb](https://github.com/dylanhogg/jupyter-experiments/blob/master/notebooks/legal_eagle/blackstone/BlackstoneTest.colab.ipynb)  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dylanhogg/jupyter-experiments/master?urlpath=notebooks/legal_eagle/blackstone/BlackstoneTest.colab.ipynb)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dylanhogg/jupyter-experiments/blob/master/notebooks/legal_eagle/blackstone/BlackstoneTest.colab.ipynb)  
