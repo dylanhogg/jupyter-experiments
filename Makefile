@@ -1,12 +1,12 @@
 ## Create main venv for jupyter
 venv:
-	if [[ ! -e venv/bin/activate ]]; then python3 -m venv venv ; source venv/bin/activate ; pip install --upgrade pip ; pip install -r requirements.txt; fi
+	if [[ ! -e venv/bin/activate ]]; then python3 -m venv venv ; source venv/bin/activate ; pip install --upgrade pip ; pip install -r requirements.txt --use-feature=2020-resolver; fi
 	source venv/bin/activate; jupyter labextension install jupyterlab-plotly
 	source venv/bin/activate; pip freeze > requirements_freeze.txt
 
 ## Run jupyter in main venv
 jupyter:
-	source venv/bin/activate; jupyter lab
+	source venv/bin/activate; PYTHONPATH='./src' jupyter lab
 
 ## Create qgrid enabled venv for jupyter
 venv_qgrid:
@@ -23,12 +23,24 @@ venv_qgrid:
 jupyter_qgrid:
 	source venv_qgrid/bin/activate; jupyter lab
 
+## Create blackstone venv for jupyter
+venv_blackstone:
+	if [[ ! -e venv_blackstone/bin/activate ]]; then python3 -m venv venv_blackstone ; source venv_blackstone/bin/activate ; pip install --upgrade pip ; pip install -r requirements_blackstone.txt; fi
+	source venv_blackstone/bin/activate; pip install https://blackstone-model.s3-eu-west-1.amazonaws.com/en_blackstone_proto-0.0.1.tar.gz
+	source venv_blackstone/bin/activate; python -m spacy download en_core_web_md
+	source venv_blackstone/bin/activate; pip freeze > requirements_blackstone_freeze.txt
+
+## Run jupyter in main venv
+jupyter_blackstone:
+	source venv_blackstone/bin/activate; PYTHONPATH='./src' jupyter lab
+
 ## Create minimal venv for jupyter
-venv_minimal:
-	if [[ ! -e venv_minimal/bin/activate ]]; then python3 -m venv venv_minimal ; source venv_minimal/bin/activate ; pip install --upgrade pip ; pip install -r requirements_minimal.txt; fi
+venv_minimal_reset:
+    rm -rf venv_minimal
+	python3 -m venv venv_minimal ; source venv_minimal/bin/activate ; pip install --upgrade pip ; pip install -r requirements_minimal.txt
 	source venv_minimal/bin/activate; pip freeze > requirements_minimal_freeze.txt
 
-## Run minimal in qgrid venv
+## Run minimal in minimal venv, no PYTHONPATH to src
 jupyter_minimal:
 	source venv_minimal/bin/activate; jupyter lab
 

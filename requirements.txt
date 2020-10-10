@@ -11,3 +11,10 @@ yellowbrick
 texthero
 spacy
 cloud-products
+tensorflow
+torch
+torchvision
+transformers
+txtai
+streamlit
+spacy-streamlit
