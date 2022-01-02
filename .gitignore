@@ -1,10 +1,12 @@
 # Custom
+.DS_Store
 data/
 data-cache/
 .idea/
 .vscode/
 venv*/
 .cloud-products-cache/
+training_checkpoints/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
