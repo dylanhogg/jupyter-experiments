@@ -1,6 +1,6 @@
 ## Create main venv for jupyter
 venv:
-	if [[ ! -e venv/bin/activate ]]; then python3 -m venv venv ; source venv/bin/activate ; pip install --upgrade pip ; pip install -r requirements.txt --use-feature=2020-resolver; fi
+	if [[ ! -e venv/bin/activate ]]; then python3 -m venv venv ; source venv/bin/activate ; pip install --upgrade pip ; pip install -r requirements.txt; fi
 	source venv/bin/activate; jupyter labextension install jupyterlab-plotly
 	source venv/bin/activate; pip freeze > requirements_freeze.txt
 
