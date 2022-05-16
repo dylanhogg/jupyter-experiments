@@ -1,0 +1,23 @@
+Ref: https://medium.com/@egiron/how-to-install-gdal-and-qgis-on-macos-catalina-ca690dca4f91
+
+OSX System
+    Install the headers files first to avoid GDAL fail.
+    GDAL will fail installing if expected version of the dependence is not present in the system.
+    % brew install gdal --HEAD
+
+    Now install GDAL
+    % brew install gdal
+
+    To be sure that GDAL is installed in your system, just type:
+    % /opt/homebrew/Cellar/gdal/3.4.3_1/bin/gdal-config --version
+    3.4.3
+    % /opt/homebrew/Cellar/gdal/3.4.3_1/bin/gdalinfo --version
+    GDAL 3.4.3, released 2022/04/22
+
+Python
+    Ensure you pip install the corresponding version, e.g. GDAL==3.4.3 in requirements.txt
+
+Jupyter etc
+    Set env vars on launch (maybe not required?):
+    export GDAL_LIBRARY_PATH=/opt/homebrew/opt/gdal/lib/libgdal.dylib
+    export GEOS_LIBRARY_PATH=/opt/homebrew/opt/geos/lib/libgeos_c.dylib

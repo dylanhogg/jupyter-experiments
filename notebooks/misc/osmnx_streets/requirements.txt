@@ -1,0 +1,5 @@
+GDAL==3.4.3  # /opt/homebrew/Cellar/gdal/3.4.3_1/bin/gdal-config --version
+fiona
+scikit-learn
+osmnx
+jupyterlab
