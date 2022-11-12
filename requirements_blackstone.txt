@@ -1,2 +1,3 @@
 blackstone
 jupyterlab
+ipywidgets

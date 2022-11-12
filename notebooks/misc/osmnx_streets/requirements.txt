@@ -1,5 +1,5 @@
-GDAL==3.4.3  # /opt/homebrew/Cellar/gdal/3.4.3_1/bin/gdal-config --version
+GDAL==3.4.3  # Sync with /opt/homebrew/Cellar/gdal/3.4.3_1/bin/gdal-config --version
 fiona
-scikit-learn
+scikit-learn  # Required for ox.shortest_path
 osmnx
 jupyterlab
