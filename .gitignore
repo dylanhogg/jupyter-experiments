@@ -7,6 +7,9 @@ data-cache/
 venv*/
 .cloud-products-cache/
 training_checkpoints/
+.joblib_cache/
+.joblib_cache*/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
